@@ -129,6 +129,16 @@
         }
         }
     /* View 2 & 4 */
+        .btn-link {
+            color: black !important;
+            text-decoration: none !important;
+        }
+        .btn-link:visited,
+        .btn-link:hover,
+        .btn-link:active {
+            color: black !important;
+            text-decoration: none !important;
+        }
         .add-to-cart-button {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
