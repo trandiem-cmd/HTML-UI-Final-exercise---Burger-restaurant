@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="css/base.css">
+    <style>
+        .card {
+            width: 100%;
+            border-radius: 15px;
+        }
+        .card-img {
+            width: 100%;
+            max-width: 270px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .card-title {
+            font-weight:bolder;
+            font-size: 25px;
+            text-align: center;
+            padding: 0px;
+        }
+        .card-text {
+            margin-bottom:0px;
+        }
+        .item {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 100%;
+            place-items:center;
+        }
+        .item-img {
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header style="height:50px ;">
+        <img src="assets/logo-D-Burger.png" alt="logo">
+        </header>
+        <div class="card">
+            <div class="card-body">
+                    <h5 class="card-title">Classic American</h5>
+                    <div><img class="card-img"src="assets/classic.jpg" alt="classic-img"></div>
+                <p class="card-text">
+                    <ul style="margin: 0px;">
+                        <h5 style="font-weight: bolder;font-size: 14px;text-align:left;margin-bottom:5px;">Details:</h5>
+                    <li style="font-size: 11px;">Ingredients: Burger bun, steak, cheese, lettuce,
+                    tomato, ketchup, potato roll, mayonnaise</li>
+                    <li style="font-size: 11px;">Nutritional Information:<br>
+                        <table>
+                        <tr>
+                            <td style="font-size: 10px;">
+                    - Calories: 500–600 kcal<br>
+                    - Protein: 25–30 g<br>        
+                    - Total Fat: 25–35 g<br>        
+                    - Saturated Fat: 10–12 g<br>    
+                    - Cholesterol: 70–90 mg<br>
+                            </td>
+                            <td style="font-size: 10px;">
+                    - Carbohydrates: 40 g<br>
+                    - Dietary Fiber: 2–3 g<br>
+                    - Sugars: 6–8 g<br>
+                    - Sodium: 900–1,200 mg<br>
+                            </td>
+                        </tr>
+                        </table>
+                    </li>
+                    </ul>
+                </p>       
+                <div class="extra-item">
+                    <p style="text-align: start;padding-left: 32px;font-weight: bolder;font-size: 14px;margin-bottom: 5px;">Extra choices:</p>
+                    <div class="item">
+                        <img class="item-img" src="assets/fry.jpg">
+                        <p style="margin: 0px;">Special Fries</p>
+                        <div class="add-to-cart-button">
+                            <button style="border:none;background-color: transparent;"><img class="minus-add-button" src="assets/minus-button.png"></button>
+                            <p style="margin:0px;width: 5px;">1</p>
+                            <button style="border:none;background-color: transparent;"><img class="minus-add-button" src="assets/add-button.png"></button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="item-img" src="assets/onion-rings.jpg">
+                        <p style="margin: 0px;">Onion rings</p>
+                        <div class="add-to-cart-button">
+                            <button style="border:none;background-color: transparent;"><img class="minus-add-button" src="assets/minus-button.png"></button>
+                            <p style="margin:0px;width: 5px;">1</p>
+                            <button style="border:none;background-color: transparent;"><img class="minus-add-button" src="assets/add-button.png"></button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="item-img" src="assets/coca.jpg">
+                        <p style="margin: 0px;">Coca-cola</p>
+                        <div class="add-to-cart-button orgininal">
+                            <button style="border:none;background-color: transparent;"><img class="minus-add-button" src="assets/minus-button.png"></button>
+                            <p style="margin:0px;text-align: center;">1</p>
+                            <button style="border:none;background-color: transparent;"><img class="minus-add-button" src="assets/add-button.png"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-to-cart-button-wrap">
+                <div class="add-to-cart-button copy">
+                    <button style="border:none;background-color: transparent;"><img class="minus-add-button" src="assets/minus-button.png"></button>
+                    <p style="margin:0px;text-align: center;">1</p>
+                    <button style="border:none;background-color: transparent;"><img class="minus-add-button" src="assets/add-button.png"></button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart">
+                    <a href="index.html" style="text-decoration:none; color:inherit;">
+                    <button class="cart-button"><b>Back</b></button></a>
+                    <a href="view3-menu-with-shopping-cart.html" style="text-decoration:none; color:inherit;">
+                    <button class="cart-button">
+                        <img src="assets/cart.png"><b>Basket - € 19.96</b>
+                    </button></a>
+        </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>  
+</body>
+</html>
